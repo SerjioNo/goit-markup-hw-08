@@ -1,7 +1,8 @@
 .work {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: inline;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  @include desk {
     padding-top: 0px;
   }
 }

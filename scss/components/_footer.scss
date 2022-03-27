@@ -2,28 +2,20 @@
   background-color: var(--title-back-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     justify-content: center;
   }
 }
 
 .container__footer {
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
+  text-align: center;
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+  @include desk {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
@@ -40,14 +32,13 @@
 }
 
 .left-block {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-direction: column;
-    margin-right: 165px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-direction: column;
     margin-bottom: 0px;
     margin-right: 70px;
@@ -107,12 +98,13 @@
 }
 
 .footer-tablet {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
   }
-  @media screen and (min-width: 1200px) {
-    flex: none;
+  @include desk {
     margin-left: 0px;
     margin-right: 93px;
   }
@@ -120,10 +112,7 @@
 /*----------SOСIAL------------*/
 
 .net {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 0;
   }
 }
@@ -140,19 +129,17 @@
 }
 
 .net__list {
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     justify-content: left;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     align-items: center;
   }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .net-social-list {
@@ -186,7 +173,8 @@
 /*----------SUBSCRIPT------------*/
 
 .subscrip {
-  @media screen and (min-width: 1200px) {
+  margin-top: 60px;
+  @include desk {
     margin-left: auto;
   }
 }
@@ -203,15 +191,9 @@
 }
 
 .subscrip__mail {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
+  width: 450px;
+  margin-bottom: 20px;
+  @include desk {
     width: 358px;
     margin-left: 0;
     margin-bottom: 0;
@@ -233,15 +215,13 @@
 
 .subscrip__form {
   display: flex;
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  @media screen and (min-width: 768px) {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tab {
     flex-direction: column;
-    align-items: center;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-wrap: nowrap;
     flex-direction: row;
   }
@@ -269,4 +249,5 @@
 
 .subscrip-icon {
   margin-left: 10px;
+  fill: var(--title-studio-color);
 }

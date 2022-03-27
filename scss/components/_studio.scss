@@ -1,32 +1,27 @@
 .studio {
   background-color: var(--title-back-color);
-
-  @include mob {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    max-width: 480px;
-    height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imeges/header-img-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../imeges/header-img-mob-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../imeges/header-img-mob-2x.jpg);
-    }
+      url(../imeges/header-img-mob-2x.jpg);
   }
   @include tab {
-    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -82,20 +77,17 @@
 }
 
 .studio__title {
-  @include mob {
-    width: 360px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62; /* or 162% */
-    margin-bottom: 40px;
-  }
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62; /* or 162% */
+  margin-bottom: 30px;
   @include desk {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36; /* or 136% */
     text-align: center;
-    margin-bottom: 30px;
   }
   letter-spacing: 0.06em;
   text-transform: uppercase;

@@ -1,9 +1,7 @@
 .menu {
   display: flex;
-  padding-bottom: 0px;
-  @include mob {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  margin-bottom: 60px;
   @include tab {
     margin-bottom: 50px;
     justify-content: center;
