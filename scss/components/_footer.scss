@@ -103,10 +103,12 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-bottom: 60px;
   }
   @include desk {
     margin-left: 0px;
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 /*----------SOСIAL------------*/
@@ -173,9 +175,6 @@
 /*----------SUBSCRIPT------------*/
 
 .subscrip {
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-  }
   @include desk {
     margin-left: auto;
     margin-top: 0;
