@@ -173,7 +173,9 @@
 /*----------SUBSCRIPT------------*/
 
 .subscrip {
-  margin-top: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
   @include desk {
     margin-left: auto;
   }
@@ -220,6 +222,7 @@
 
   @include tab {
     flex-direction: column;
+    align-items: center;
   }
   @include desk {
     flex-wrap: nowrap;
