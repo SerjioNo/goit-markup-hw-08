@@ -2,7 +2,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
   @include mob {
     width: 480px;
   }

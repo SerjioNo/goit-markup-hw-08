@@ -13,7 +13,7 @@
   width: 100%;
   height: 100%;
   background: var(--title-studio-color);
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
   @include tab {
     width: 354px;
